@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+  <div class="container header-inner">
+
+    <!-- LEFT: LOGO -->
+    <div class="header-left">
+      <img src="images/Logo.jpg" alt="Basbosa Tech">
+      <span class="site-name">
+        Basbosa<span>Tech</span>
+      </span>
+    </div>
+
+    <!-- CENTER: NAV -->
+     <nav class="header-nav">
+      <a href="index.html"><strong>Home</strong></a>
+      
+      <a href="Contact.html"><strong>Contact</strong></a>
+      <a href="Cart.html"><strong>Cart</strong></a>
+    </nav>
+
+
+    <!-- RIGHT: ICONS -->
+    <div class="header-icons">
+
+      <!-- Search -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="16" y1="16" x2="22" y2="22"></line>
+        </svg>
+      </span>
+
+      <!-- User -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="4"></circle>
+          <path d="M4 22c0-4 4-6 8-6s8 2 8 6"></path>
+        </svg>
+      </span>
+
+      <!-- Cart -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="18" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.5 13h11l2-8H6"></path>
+        </svg>
+      </span>
+
+      <!-- Menu -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </span>
+
+    </div>
+
+  </div>
+</header>
+
+<section class="container checkout">
+  <h1>Checkout</h1>
+
+  <form id="checkout-form">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Address" required>
+    <input type="text" placeholder="Phone" required>
+
+    <button type="submit">Place Order</button>
+  </form>
+</section>
+<!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>©<span id="year"></span> Basbosa Tech — All rights reserved.</div>
+       
+    </div>
+  </footer>
+
+<script>
+document.getElementById("checkout-form").onsubmit = function(e){
+  e.preventDefault();
+  alert("Order placed successfully 💗");
+  localStorage.removeItem("cart");
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

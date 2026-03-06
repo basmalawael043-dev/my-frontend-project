@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Watches</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <div class="logo">Basbosa<span class="logo-accent">Tech</span></div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+
+                <!-- Dropdown Categories -->
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="Laptops.html">Laptops</a>
+                        <a href="SmartPhones.html">Smart Phones</a>
+                        <a href="Watches.html">Smart Watches</a>
+                        <a href="Audio.html">Headphones</a>
+                    </div>
+                </div>
+
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="Cart.html" class="cart-btn">
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Smart Watches Section -->
+    <section class="container">
+        <h2 class="section-title">Smart Watches</h2>
+
+        <div class="products-grid">
+
+            <!-- Watch 1 -->
+            <div class="product-card">
+                <img src="images/Apple Watch Series 9.jpg" alt="Apple Watch Series 9">
+                <h3>Apple Watch Series 9</h3>
+                <p class="price">$399</p>
+                <button class="add-btn"
+                    onclick="addToCart('Apple Watch Series 9', 399, 'images/Apple Watch Series 9.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Watch 2 -->
+            <div class="product-card">
+                <img src="images/Galaxy Watch 6.jpg" alt="Galaxy Watch 6">
+                <h3>Galaxy Watch 6</h3>
+                <p class="price">$349</p>
+                <button class="add-btn"
+                    onclick="addToCart('Galaxy Watch 6', 349, 'images/Galaxy Watch 6.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="Script.js"></script>
+</body>
+</html>

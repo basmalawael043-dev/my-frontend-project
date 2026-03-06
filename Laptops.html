@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laptops</title>
+    <link rel="stylesheet" href="Styles.css">
+      
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <div class="logo">Basbosa<span class="logo-accent">Tech</span></div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="Categories.html">Categories</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Cart.html">Cart</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Laptops Section -->
+    <section class="container">
+        <h2 class="section-title">Laptops</h2>
+
+        <div class="products-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/MacBook Air M2.jpg" alt="MacBook Air M2">
+                <h3 class="product-title">MacBook Air M2</h3>
+                <p class="product-price">$999</p>
+                <button class="add-btn" onclick="addToCart('MacBook Air M2', 999, 'images/MacBook Air M2.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/HP Omen 16.jpg" alt="HP Omen 16">
+                <h3 class="product-title">HP Omen 16</h3>
+                <p class="product-price">$1599</p>
+                <button class="add-btn" onclick="addToCart('HP Omen 16', 1599, 'images/HP Omen 16.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="Script.js"></script>
+</body>
+</html>

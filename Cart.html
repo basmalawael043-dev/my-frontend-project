@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+       <div class="header-left">
+      <img src="images/Logo.jpg" alt="Basbosa Tech">
+      <span class="site-name">
+        Basbosa<span>Tech</span>
+      </span>
+    </div>
+    <!-- CENTER: NAV -->
+     <nav class="header-nav">
+      <a href="index.html"><strong>Home</strong></a>
+      
+      <a href="Contact.html"><strong>Contact</strong></a>
+      <a href="Cart.html"><strong>Cart</strong></a>
+    </nav>
+
+
+    <!-- RIGHT: ICONS -->
+    <div class="header-icons">
+
+      <!-- Search -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="16" y1="16" x2="22" y2="22"></line>
+        </svg>
+      </span>
+
+      <!-- User -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="4"></circle>
+          <path d="M4 22c0-4 4-6 8-6s8 2 8 6"></path>
+        </svg>
+      </span>
+
+      <!-- Cart -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="18" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.5 13h11l2-8H6"></path>
+        </svg>
+      </span>
+
+      <!-- Menu -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </span>
+
+
+       
+  </header>
+
+    <!-- Cart Title -->
+    <section class="container cart-page">
+        <h1>Your Cart</h1>
+
+        <!-- Cart Items -->
+        <div id="cart-items" class="cart-list"></div>
+        
+
+        <!-- Summary -->
+        <div class="cart-summary">
+            <div class="totals">
+                <p class="big"><strong>Total Items: </strong><span id="total-items">0</span></p>
+                <p class="big"><strong>Total Price: </strong><span id="total-price">$0</span></p>
+            </div>
+
+             <div class="cart-actions">
+  <button id="clear-cart" class="cart-action-btn">Clear Cart</button>
+  <button class="cart-action-btn" onclick="goToCheckout()">Checkout</button>
+</div> 
+        </div>
+    </section>
+    <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>©<span id="year"></span> Basbosa Tech — All rights reserved.</div>
+       
+    </div>
+  </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>

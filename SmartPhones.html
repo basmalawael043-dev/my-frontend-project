@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smartphones</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <div class="logo">Basbosa<span class="logo-accent">Tech</span></div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="Categories.html">Categories</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Cart.html">Cart</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Smartphones Section -->
+    <section class="container">
+        <h2 class="section-title">Smartphones</h2>
+
+        <div class="products-grid">
+
+            <!-- iPhones -->
+            <div class="product-card">
+                <img src="images/iPhone 14.jpg" alt="iPhone 14">
+                <h3>iPhone 14</h3>
+                <p class="price">$899</p>
+                <button class="add-btn" onclick="addToCart('iPhone 14', 899, 'images/iPhone 14.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/iPhone 14 Plus.jpg" alt="iPhone 14 Plus">
+                <h3>iPhone 14 Plus</h3>
+                <p class="price">$999</p>
+                <button class="add-btn" onclick="addToCart('iPhone 14 Plus', 999, 'images/iPhone 14 Plus.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/iPhone 14 Pro Max.jpg" alt="iPhone 14 Pro Max">
+                <h3>iPhone 14 Pro Max</h3>
+                <p class="price">$1099</p>
+                <button class="add-btn" onclick="addToCart('iPhone 14 Pro Max', 1099, 'images/iPhone 14 Pro Max.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/iPhone 13 Pro Max.jpg" alt="iPhone 13 Pro Max">
+                <h3>iPhone 13 Pro Max</h3>
+                <p class="price">$799</p>
+                <button class="add-btn" onclick="addToCart('iPhone 13 Pro Max', 799, 'images/iPhone 13 Pro Max.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/iPhone 13.jpg" alt="iPhone 13">
+                <h3>iPhone 13</h3>
+                <p class="price">$699</p>
+                <button class="add-btn" onclick="addToCart('iPhone 13', 699, 'images/iPhone 13.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/iPhone 17.jpg" alt="iPhone 17">
+                <h3>iPhone 17</h3>
+                <p class="price">$1199</p>
+                <button class="add-btn" onclick="addToCart('iPhone 17', 1199, 'images/iPhone 17.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/iPhone 17 Pro Max.jpg" alt="iPhone 17 Pro Max">
+                <h3>iPhone 17 Pro Max</h3>
+                <p class="price">$1399</p>
+                <button class="add-btn" onclick="addToCart('iPhone 17 Pro Max', 1399, 'images/iPhone 17 Pro Max.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/iPhone 15 Pro.jpg" alt="iPhone 15 Pro">
+                <h3>iPhone 15 Pro</h3>
+                <p class="price">$599</p>
+                <button class="add-btn" onclick="addToCart('iPhone 15 Pro', 599, 'images/iPhone 15 Pro.jpg')">Add to Cart</button>
+            </div>
+
+            <!-- Samsung / Xiaomi / Redmi -->
+
+            <div class="product-card">
+                <img src="images/Galaxy A35.jpg" alt="Galaxy A35">
+                <h3>Galaxy A35</h3>
+                <p class="price">$349</p>
+                <button class="add-btn" onclick="addToCart('Galaxy A35', 349, 'images/Galaxy A35.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Galaxy A53 5G.jpg" alt="Galaxy A53 5G">
+                <h3>Galaxy A53 5G</h3>
+                <p class="price">$429</p>
+                <button class="add-btn" onclick="addToCart('Galaxy A53 5G', 429, 'images/Galaxy A53 5G.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Redmi Note 10s.jpg" alt="Redmi Note 10s">
+                <h3>Redmi Note 10s</h3>
+                <p class="price">$199</p>
+                <button class="add-btn" onclick="addToCart('Redmi Note 10s', 199, 'images/Redmi Note 10s.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Redmi Note 13Pro.jpg" alt="Redmi Note 13 Pro">
+                <h3>Redmi Note 13 Pro</h3>
+                <p class="price">$299</p>
+                <button class="add-btn" onclick="addToCart('Redmi Note 13 Pro', 299, 'images/Redmi Note 13Pro.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Samsung Galaxy S23.jpg" alt="Samsung Galaxy S23">
+                <h3>Samsung Galaxy S23</h3>
+                <p class="price">$899</p>
+                <button class="add-btn" onclick="addToCart('Samsung Galaxy S23', 899, 'images/Samsung Galaxy S23.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Samsung Ultra S24.jpg" alt="Samsung Ultra S24">
+                <h3>Samsung Ultra S24</h3>
+                <p class="price">$1199</p>
+                <button class="add-btn" onclick="addToCart('Samsung Ultra S24', 1199, 'images/Samsung Ultra S24.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/Xiaomi 13 Pro.jpg" alt="Xiaomi 13 Pro">
+                <h3>Xiaomi 13 Pro</h3>
+                <p class="price">$999</p>
+                <button class="add-btn" onclick="addToCart('Xiaomi 13 Pro', 999, 'images/Xiaomi 13 Pro.jpg')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="Script.js"></script>
+</body>
+</html>
