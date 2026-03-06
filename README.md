@@ -13,8 +13,7 @@ Frontend electronics store website for selling mobiles, laptops, and smart watch
 - CSS
 - JavaScript
 
-## Screenshots
-![Homepage](HomePage(2).png)
+ 
 ## Live Demo
 
 🚀 **Live Website:**  
